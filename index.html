@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Main page</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- <div id="navbar">
+
+        <a href="#home">Home page</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#entry">Entry form</a>
+        <a href="#data">Form data</a>
+
+    </div> -->
+
+    <div id="json" onmouseleave="contract(this.id)" onmouseenter="expand(this.id)" style="display: inline-block; position:absolute; z-index:0">
+        <h2>JSON Assessment</h2>
+        <ul id="navbar" style="visibility: hidden">
+            <li id="jsonManipulation" onmouseover="hover(id)" onmouseout="unhover(id)">
+                <a href="trainers.html">JSON manipulation</a>
+            </li>
+        </ul>
+    </div>
+    <div id="forms" onmouseleave="contract(this.id)" onmouseenter="expand(this.id)" style="display:inline-block; position:absolute; left:20vw;">
+        <h2>Form Assessment</h2>
+        <ul class="navbar" style="visibility: hidden">
+            <li id="entryForm" onmouseover="hover(id)" onmouseout="unhover(id)">
+                <a href="entryform.html">Entry Form</a>
+            </li>
+            <li id="formData" onmouseover="hover(id)" onmouseout="unhover(id)">
+                <a href="formatdata.html">Form Data</a>
+            </li>
+        </ul>
+    </div>
+    <script src="json.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
