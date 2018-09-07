@@ -141,7 +141,6 @@ var submitSkill = function () {
 }
 
 var validation = function () {
-    event.preventDefault();
     var name = document.forms["newTrainer"]["name"].value;
     var dob = document.forms["newTrainer"]["dob"].value; 
     var address = document.forms["newTrainer"]["address"].value; 
@@ -170,8 +169,6 @@ var validation = function () {
         localStorage.setItem("address",address);
         localStorage.setItem("postcode",postcode);
         localStorage.setItem("email",email);
-
-        document.open("formatdata.html");
     }
     
 }

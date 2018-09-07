@@ -7,14 +7,14 @@
 
 <body>
     
-<form name="newTrainer">
+<form name="newTrainer" action="formatdata.html" onsubmit="validation()">
     <input type="text" placeholder="Name" name="name">
     <input type="text" placeholder="DOB" name="dob">
     <input type="text" placeholder="Address" name="address">
     <input type="text" placeholder="Postcode" name="postcode">
     <input type="text" placeholder="email" name="email">
+    <button type="submit">Submit</button>
 </form>
-<button onclick="validation()">Submit</button>
 
     <script src="./js/app.js"></script>
 </body>
